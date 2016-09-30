@@ -20,7 +20,11 @@ class NimClass(object):
 		return letter_string
 	def run_python_script(self,filepath):
 		"""
-		传入python脚本文件路径，运行脚本，用法(注意！！！路径中请用双斜杠，不要问我为什么)：
-		|run_python_script|D:\\test.py|
+		传入python脚本文件路径，运行该脚本，用法事例(注意！！！路径中请用双斜杠，不要问我为什么)：
+		|run_python_script|D:\\\\test.py|
 		"""
-		execfile('python filepath')
+		#os.system("python C:\\Users\\hzliukai1\\Desktop\\IM_Script\\IMwebsite_md5check.py")
+		#execfile('C:\\Users\\hzliukai1\\Desktop\\IM_Script\\IMwebsite_md5check.py')
+		dir='python'+' '+filepath
+		print dir
+		os.system(dir)
